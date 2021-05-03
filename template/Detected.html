@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Depression Detection</title>
+		{% if value[0] == 1 %}
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/Depressed.css') }}">
+		{% else %}
+			<link rel="stylesheet" href="{{ url_for('static', filename='css/fine.css') }}">
+		{% endif %}
+	</head>
+
+	<body>
+
+		<h1>This is a heading</h1>
+		<p>This is a paragraph.</p>
+		
+		<div class="content-section">
+		{% if value[0] == 1 %}
+    		<H1>Depressed {% print(value[1]) %}%</H1>
+		{% else %}
+    		<H1>Not Depressed {% print(value[1]) %}%</H1>
+		{% endif %}
+		<form method ="POST", action="/">
+            {{ form.hidden_tag() }}
+            <dir class="form-group">
+                <input type="submit", value="submit">
+            </dir>
+        </form>
+    </div>
+
+	</body>
+
+</html> 

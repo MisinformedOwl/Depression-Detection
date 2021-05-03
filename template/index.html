@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Depression Detection</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/start.css') }}">
+	</head>
+
+	<body>
+
+		<h1>Depression Detection</h1>
+		<p>This is a AI which can be used to detect if a twitter post was posted by a user who is depressed.
+		However this doesn't just mean that it can be used only from twitter, just about any text is viable to be used.</p>
+		
+        <form method ="POST", action="Detected.html">
+            {{ form.hidden_tag() }}
+            <dir class="form-group">
+                <p>Tweet</p>
+                <input type="textarea" name="tweet">
+            </dir>
+            <dir class="form-group">
+                {{ form.submitTweet(class="form-control form-control-lg") }}
+            </dir>
+        </form>
+
+	</body>
+
+</html> 

@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method ="POST", action="">
+            {{ form.hidden_tag() }}
+			
+			{{ form.tweetField.label(class="form-control-label") }}
+			{{ form.tweetField(class_="form-control") }}
+			{{ form.submitTweet(class_="form-control") }}
+        </form>
+    </div>
+{% endblock content %}
