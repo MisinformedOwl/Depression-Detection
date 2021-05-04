@@ -3,6 +3,7 @@
 # Files
 ### Folders
 The CSS, static/CSS and template files are all involved in the online version of the program.
+With the data file being responsible for data storage
 
 ### Naive.py 
 is the main file for training the AI as it uses the naive bayes model which i mainly used.
