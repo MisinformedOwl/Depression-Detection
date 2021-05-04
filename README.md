@@ -22,3 +22,27 @@ This file contains the preprocessing script for all files
 
 ### Other files
 Any other .py files were test builds, they showcase the differences in accuracy, with the only exception being nltk which is a similar accuracy to sklearn however does not output a model.
+
+# Installation
+### environment
+The environment will be done tomorrow
+
+### Anaconda
+To use this program the easiest way is to download anaconda. It is a hub for python, which allows the management of environements aswell as a host of different tools to be used.
+
+### How to install
+Firstly import the DepressionDetection.yml into anaconda in the environemnts tab
+
+Then open the anaconda command prompt using thw windows key.
+
+Navigate to the folder location using
+
+```
+  cd [The file location]
+```
+Side note please make sure that the folder is in the same drive as the command prompt. or it will be unable to find it. (The prompt tends to open in the C:drive for me so download to the C drive if possible)
+
+After this youare good to go by typing 
+```
+  python [The file you wish to use]
+```
