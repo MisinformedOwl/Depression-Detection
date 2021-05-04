@@ -7,7 +7,7 @@ import random
 import pickle
 import preprocess
 
-def export(model, vec):
+def export(model):
     with open("model.pickle", "wb") as out:
         pickle.dump(model, out)
 
@@ -18,8 +18,6 @@ def matrix(confusion):
     print(f"False negative: {fn}")
     print(f"True positive: {tp}")
     print(f"False positive: {fp}")
-
-
 
 #%%
 
