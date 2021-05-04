@@ -1,9 +1,0 @@
-Things of note for my program
-
-Early stages showed that feel was heavily relied on for being marked as depressed.
-The method of collecting data was incorrect as many of the # used would return things like "If you have #depression" then look at {link}"
-After rewoirking the data collection script i identified that not alot of tweets in #depression and #sad were in my opinion depressed. However this created a huge drop in performance
-After using a different naive bayes algorithm which is designed for imbalanced data this did not improve performance.
-Strangely enough after switching to the data where i mark everything inside of each # as one label or the other i managed to achieve a accuracy rating of 80%. and after testing this on objvious examples which i have made up such as "Theres nothing left for me in my life" it returned accurate results
-However after playing around with the model i set the ngram range to 1 and it achieved a much higher accuracy. I believe this is a issue of over fitting to single words.
-After setting a limit on the features to be collected i found a sharp increase in performing on test example i create. However a lower perfromance overall.
