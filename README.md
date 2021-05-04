@@ -18,3 +18,6 @@ Is the file used in starting up a local server for my python script. When bootin
 
 ### Preprocess
 This file contains the preprocessing script for all files
+
+### Other files
+Any other .py files were test builds, they showcase the differences in accuracy, with the only exception being nltk which is a similar accuracy to sklearn however does not output a model.
